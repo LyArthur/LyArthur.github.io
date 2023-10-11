@@ -7,12 +7,13 @@ class Header extends Component {
 
   constructor() {
     super();
-    this.state = { checked: false };
+    this.state = { checked: localStorage["theme"] === "dark" };
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
   }
 
   onThemeSwitchChange(checked) {
     this.setState({ checked });
+    localStorage["theme"] = localStorage["theme"] === "dark" ? "light" : "dark";
     this.setTheme();
   }
 
