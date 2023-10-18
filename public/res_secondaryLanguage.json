@@ -1,12 +1,12 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description": "",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
         "skills": "Skills",
-        "experience": "Experience"
+        "experience": "Experience & Education"
       }
     },
     "projects": [
@@ -79,38 +79,65 @@
         ]
       }
     ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
+  "experience": [
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Louis Pergaud High School",
+      "title": "2ème année de BTS SIO",
+      "years": "Septembre 2023 - Aujourd'hui",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "HTML / CSS",
+        "Symfony",
+        "PHP"
+      ]
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "company": "ADP - Automatic Data Processing",
+      "title": "Stage de première année de BTS SIO",
+      "years": "5 - 30 Juin 2023",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Java",
+        "HTML / CSS",
+        "Glassfish",
+        "Oracle",
+        "Servlet"
+      ],
+      "description": "Refonte de la page d'accueil des outils R&D et de leurs environnements."
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Lycée Louis pergaud",
+      "title": "1ère année de BTS SIO",
+      "years": "Septembre 2022 - Juin 2023",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "HTML / CSS",
+        "PHP"
+      ]
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Lycée Louis pergaud",
+      "title": "Baccalauréat Général",
+      "years": "Septembre 2019 - Juin 2022",
+      "technologies": [
+        "Numérique et sciences informatiques (NSI)",
+        "Mathématiques",
+        "Physique-chimie"
+      ]
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "company": "DELL",
+      "title": "Stage d'observation",
+      "years": "14 - 18 Janvier 2019",
+      "description": "Découverte de l'ensemble des activités et services d'une grande entreprise"
+    }
+  ]
   }
