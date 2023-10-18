@@ -12,15 +12,14 @@ window.$primaryLanguageIconId = 'primary-lang-icon';
 window.$secondaryLanguageIconId = 'secondary-lang-icon';
 
 /* sauvegarder si le site est ou non en darkmode */
-if(!localStorage["theme"]){
+if (!localStorage["theme"]) {
     localStorage["theme"] = "light";
-
-} else {
+} else if (localStorage["theme"] === "dark") {
     localStorage["theme"] = "dark";
     var dataThemeAttribute = "data-theme";
     var body = document.body;
     body.setAttribute(dataThemeAttribute, localStorage["theme"]);
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 serviceWorker.register();
