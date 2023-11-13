@@ -1,8 +1,11 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import { Icon } from "@iconify/react";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
+import {DndContext} from "@dnd-kit/core";
+import {Droppable} from '../functions/droppable';
+import {Draggable} from '../functions/draggable';
 
 class About extends Component {
   render() {
@@ -16,6 +19,9 @@ class About extends Component {
     }
 
     return (
+        <DndContext>
+          <Droppable id={"tests"}><h2>oui</h2></Droppable>
+          <Draggable id={"nice"}><h1>aaa</h1></Draggable>
       <section id="about">
         <div className="col-md-12">
           <h1 style={{ color: "black" }}>
@@ -125,6 +131,7 @@ class About extends Component {
           </div>
         </div>
       </section>
+        </DndContext>
     );
   }
 }
