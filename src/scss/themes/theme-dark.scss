@@ -51,6 +51,16 @@ body[data-theme="dark"] {
          background: #6d6d6d;
          color: white;
       }
+      .mb-5{
+         justify-content: unset;
+         .col-md-10{
+            padding: unset;
+         }
+         .col-md-8{
+            padding: unset;
+            display: unset;
+         }
+      }
    }
 
    #portfolio {

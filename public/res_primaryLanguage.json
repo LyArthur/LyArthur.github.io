@@ -1,7 +1,5 @@
 {
   "basic_info": {
-    "description_header": "Bonjour",
-    "description": "",
     "section_name": {
       "about": "A propos de moi",
       "projects": "Projets",
@@ -10,8 +8,18 @@
       "contact": "Contact"
     }
   },
+  "about": [
+    {
+      "id": 1,
+      "description_header": "Bonjour",
+      "description": "",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
   "projects": [
-
   ],
   "experience": [
     {
