@@ -1,8 +1,6 @@
 import React from "react";
 import { useDraggable,DragOverlay } from "@dnd-kit/core";
 
-const CustomStyle = {
-};
 
 export function Draggable({ id, styles,title }) {
     const { attributes, listeners, setNodeRef, transform,  } = useDraggable({
@@ -17,7 +15,8 @@ export function Draggable({ id, styles,title }) {
     return (
         <div
             ref={setNodeRef}
-            style={{ ...style, ...CustomStyle, ...styles }}
+            style={{ ...style, ...styles }}
+            id={"card-"+id}
         >
             <div className="card">
                 <div className="card-header" {...listeners}
@@ -26,17 +25,18 @@ export function Draggable({ id, styles,title }) {
                         className="iconify"
                         data-icon="emojione:red-circle"
                         data-inline="false"
-                    ></span>{" "}
+                    ></span>
+                    {" "}
                     &nbsp;{" "}
                     <span
                         className="iconify"
-                        data-icon="twemoji:yellow-circle"
+                        data-icon="twemoji:green-circle"
                         data-inline="false"
                     ></span>{" "}
                     &nbsp;{" "}
                     <span
                         className="iconify"
-                        data-icon="twemoji:green-circle"
+                        data-icon="twemoji:yellow-circle"
                         data-inline="false"
                     ></span>
                 </div>

@@ -118,16 +118,22 @@ header h1 {
 			display: unset;
 		}
 	}
+	h1 {
+		padding-top: 2%;
+		font: 18px/24px 'opensans-bold', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: black;
+		text-align: center;
+	}
+	.card-header{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		gap: 1.5%;
+	}
 }
 
-#about h1 {
-	padding-top: 2%;
-	font: 18px/24px 'opensans-bold', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: black;
-	text-align: center;
-}
 
 .foto img {
 	display: block;

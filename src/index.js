@@ -17,9 +17,19 @@ if (!localStorage["theme"]) {
 } else if (localStorage["theme"] === "dark") {
     localStorage["theme"] = "dark";
     var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    body.setAttribute(dataThemeAttribute, localStorage["theme"]);
+    document.body.setAttribute(dataThemeAttribute, localStorage["theme"]);
 }
-
+function check_borders(){
+    Array.from(document.getElementsByClassName("card")).forEach((card) => {
+        let stylee = window.getComputedStyle(card.parentElement);
+        let left = parseInt(stylee.getPropertyValue("left"));
+        let width = parseInt(stylee.getPropertyValue("width"));
+        if (left+width - window.innerWidth > 0){
+            card.parentElement.style.left = left-width-(left - window.innerWidth)+"px";
+            localStorage[card.parentElement.id+"-x"] = left-width-(left - window.innerWidth);
+        }
+    })
+}
+window.addEventListener("resize",check_borders)
 ReactDOM.render(<App/>, document.getElementById('root'));
 serviceWorker.register();
