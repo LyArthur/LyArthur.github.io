@@ -105,10 +105,19 @@ header h1 {
 	cursor: none !important;
 	display: none;
 }
-
 #about {
 	background: #fff;
 	overflow: hidden;
+	.mb-5{
+		justify-content: unset;
+		.col-md-10{
+			padding: unset;
+		}
+		.col-md-8{
+			padding: unset;
+			display: unset;
+		}
+	}
 }
 
 #about h1 {
@@ -256,6 +265,7 @@ header h1 {
 .vertical-timeline-element-date {
 	padding: 0 !important;
 	margin: 0 !important;
+	font-size: 1.2rem !important;
 }
 
 @media only screen and (max-width: 1170px) {

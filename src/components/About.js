@@ -1,25 +1,17 @@
 import React, {Component} from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
-import {DndContext, DragOverlay} from "@dnd-kit/core";
 import Apps from "../functions/app";
 
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      /*var profilepic = "images/" + this.props.sharedBasicInfo.image;*/
       var datas = this.props.sharedBasicInfo
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
     }
 
     return (
-        <DndContext >
       <section id="about">
         <div className="col-md-12">
           <h1 style={{ color: "black" }}>
@@ -52,7 +44,7 @@ class About extends Component {
 
             <div className="col-md-8 center tab">
               <div className="col-md-10">
-                <Apps datas={datas} />
+                <Apps datas={datas}></Apps>
               </div>
             </div>
             <div className="col-md-10">
@@ -60,7 +52,6 @@ class About extends Component {
           </div>
         </div>
       </section>
-        </DndContext>
     );
   }
 }
