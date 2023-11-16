@@ -1,7 +1,7 @@
 import React from "react";
 import { useDraggable} from "@dnd-kit/core";
 
-
+const cvLink = <p>Cliquez <a href='/Cv_Arthur_LY.pdf' target='_blank'>ici</a> pour voir mon CV !</p>;
 export function Draggable({ id, styles,title,content }) {
     const { attributes, listeners, setNodeRef, transform,  } = useDraggable({
         id
@@ -14,11 +14,7 @@ export function Draggable({ id, styles,title,content }) {
         : {};
     const CustomStyle = {
         height : '31px'
-    };/*
-    function showWindow(){
-        localStorage["z-index"] = parseInt(localStorage["z-index"]) + 1;
-        document.querySelector("#card-"+id).style.zIndex = localStorage["z-index"];
-    }*/
+    };
     return (
         <div
             ref={setNodeRef}
@@ -59,9 +55,9 @@ export function Draggable({ id, styles,title,content }) {
                     }}
                 >
                     <br />
-                    <span className="wave">{title} :) </span>
+                    <span className="wave">{title}</span>
                     <br />
-                    <span>{content}</span>
+                    <span>{<p>{content}</p>}{id===2 ? cvLink : null}</span>
                     <br />
                 </div>
             </div>

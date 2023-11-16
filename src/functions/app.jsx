@@ -4,33 +4,34 @@ import {DndContext} from '@dnd-kit/core';
 import {Droppable} from '../functions/droppable';
 import {Draggable} from '../functions/draggable';
 import {restrictToParentElement} from "@dnd-kit/modifiers";
-
+import {check_borders} from './checkBordersCards';
+function randomIntFromInterval(min, max) { // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
 export default function Apps({datas}) {
     const [notes, setNotes] = useState(datas);
     useEffect(() => {
         if (datas) {
             setNotes(datas);
         }
+        check_borders();
     }, [datas]);
     if (datas) {
         return (
-            <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow}>
+            <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow} >
                 <Droppable id={"dropable"}>
                     {datas.map((onglet) => {
                         if (localStorage["card-"+onglet.id+"-x"] === undefined){
-                            localStorage["card-"+onglet.id+"-x"] = 0;
+                            localStorage["card-"+onglet.id+"-x"] = randomIntFromInterval(25,window.innerWidth-25);
                         }
                         if (localStorage["card-"+onglet.id+"-y"] === undefined){
-                            localStorage["card-"+onglet.id+"-y"] = 0;
-                        }
-                        if (localStorage["z-index"] === undefined){
-                            localStorage["z-index"] = 1;
+                            localStorage["card-"+onglet.id+"-y"] = randomIntFromInterval(0,window.innerHeight*0.4);
                         }
                         return (<Draggable
                             styles={{
                                 position: "absolute",
-                                left: `${localStorage["card-"+onglet.id+"-x"] ? localStorage["card-"+onglet.id+"-x"] : onglet.position.x}px`,
-                                top: `${localStorage["card-"+onglet.id+"-y"] ? localStorage["card-"+onglet.id+"-y"]  : onglet.position.y}px`
+                                left: `${localStorage["card-"+onglet.id+"-x"]}px`,
+                                top: `${localStorage["card-"+onglet.id+"-y"]}px`
                             }}
                             key={onglet.id}
                             id={onglet.id}
@@ -52,8 +53,6 @@ export default function Apps({datas}) {
             const note = notes.find((x) => x.id === event.active.id);
             localStorage["card-"+note.id+"-x"] = parseInt(localStorage["card-"+note.id+"-x"]) + event.delta.x;
             localStorage["card-"+note.id+"-y"] = parseInt(localStorage["card-"+note.id+"-y"]) + event.delta.y;
-            note.position.x += event.delta.x;
-            note.position.y += event.delta.y;
             const _notes = notes.map((x) => {
                 if (x.id === note.id) return note;
                 return x;
