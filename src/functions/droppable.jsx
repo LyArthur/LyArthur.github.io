@@ -4,7 +4,7 @@ const CustomStyle = {
     position: "relative",
     display: "flex",
     minHeight: "60vh",
-    width: "100vw"
+    width: "calc(100vw - 50px)"
 };
 export function Droppable(props) {
 

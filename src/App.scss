@@ -118,6 +118,9 @@ header h1 {
 			display: unset;
 		}
 	}
+	.col-md-12{
+		padding: 0 25px;
+	}
 	h1 {
 		padding-top: 2%;
 		font: 18px/24px 'opensans-bold', sans-serif;
@@ -130,10 +133,40 @@ header h1 {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
+		position: sticky;
+		top: 0;
 		gap: 3px;
+		background-color: #f7f7f7;
 	}
 	.card{
-		max-width: 500px;
+		max-width: 80vw;
+		width: 500px;
+		min-width: 500px;
+		//todo
+		// si j'ai la fois inch, je fais aussi les bords
+		resize: both !important;
+		overflow:auto;
+		min-height: 100px;
+		position: relative;
+	}
+	.card::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 10px;
+		background-color: #919090;
+	}
+
+	.card::-webkit-scrollbar
+	{
+		width: 4px;
+		background-color: #F5F5F5;
+	}
+
+	.card::-webkit-scrollbar-thumb
+	{
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: #555;
 	}
 }
 
@@ -396,6 +429,9 @@ header h1 {
 	.portfolio .portfolio-item {
 		margin-bottom: 30px;
 	}
+}
+@media only screen and (max-width: 576px){
+	.card{min-width: 30vw !important;}
 }
 
 #skills,#contact {

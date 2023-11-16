@@ -25,10 +25,9 @@ function check_borders(){
         let left = parseInt(stylee.getPropertyValue("left"));
         let width = parseInt(stylee.getPropertyValue("width"));
         let top = parseInt(stylee.getPropertyValue("top"));
-        let height = parseInt(stylee.getPropertyValue("height"));
-        if (left+width - window.innerWidth > 0){
-            card.parentElement.style.left = left-width-(left - window.innerWidth)+"px";
-            localStorage[card.parentElement.id+"-x"] = left-width-(left - window.innerWidth);
+        if (left+width+50 - window.innerWidth > 0){
+            card.parentElement.style.left = left-width-(left+25 - window.innerWidth)+"px";
+            localStorage[card.parentElement.id+"-x"] = left-width-(left+25 - window.innerWidth);
         }
         if (top < 0){
             card.parentElement.style.top = "0px";
@@ -36,6 +35,7 @@ function check_borders(){
         }
     })
 }
+localStorage["z-index"] = 0;
 window.addEventListener("resize",check_borders)
 ReactDOM.render(<App/>, document.getElementById('root'));
 serviceWorker.register();

@@ -1,5 +1,5 @@
 import React from "react";
-import { useDraggable,DragOverlay } from "@dnd-kit/core";
+import { useDraggable} from "@dnd-kit/core";
 
 
 export function Draggable({ id, styles,title,content }) {
@@ -13,17 +13,22 @@ export function Draggable({ id, styles,title,content }) {
         }
         : {};
     const CustomStyle = {
-        zIndex:'100'
-        //todo
-        //height : '100px"
-    };
+        height : '31px'
+    };/*
+    function showWindow(){
+        localStorage["z-index"] = parseInt(localStorage["z-index"]) + 1;
+        document.querySelector("#card-"+id).style.zIndex = localStorage["z-index"];
+    }*/
     return (
         <div
             ref={setNodeRef}
             style={{ ...style,...CustomStyle, ...styles }}
             id={"card-"+id}
         >
-            <div className="card">
+            <div className="card" onClick={() => {
+                localStorage["z-index"] = parseInt(localStorage["z-index"]) + 1;
+                document.querySelector("#card-"+id).style.zIndex = localStorage["z-index"];
+            }}>
                 <div className="card-header" {...listeners}
                      {...attributes}>
                     <span

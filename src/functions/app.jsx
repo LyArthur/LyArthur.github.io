@@ -12,10 +12,9 @@ export default function Apps({datas}) {
             setNotes(datas);
         }
     }, [datas]);
-
     if (datas) {
         return (
-            <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]}>
+            <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow}>
                 <Droppable id={"dropable"}>
                     {datas.map((onglet) => {
                         if (localStorage["card-"+onglet.id+"-x"] === undefined){
@@ -24,11 +23,14 @@ export default function Apps({datas}) {
                         if (localStorage["card-"+onglet.id+"-y"] === undefined){
                             localStorage["card-"+onglet.id+"-y"] = 0;
                         }
+                        if (localStorage["z-index"] === undefined){
+                            localStorage["z-index"] = 1;
+                        }
                         return (<Draggable
                             styles={{
                                 position: "absolute",
                                 left: `${localStorage["card-"+onglet.id+"-x"] ? localStorage["card-"+onglet.id+"-x"] : onglet.position.x}px`,
-                                top: `${localStorage["card-"+onglet.id+"-y"] ? localStorage["card-"+onglet.id+"-y"] : onglet.position.y}px`
+                                top: `${localStorage["card-"+onglet.id+"-y"] ? localStorage["card-"+onglet.id+"-y"]  : onglet.position.y}px`
                             }}
                             key={onglet.id}
                             id={onglet.id}
@@ -39,6 +41,11 @@ export default function Apps({datas}) {
             </DndContext>
         );
 
+        function showWindow(event){
+            const note = notes.find((x) => x.id === event.active.id);
+            localStorage["z-index"] = parseInt(localStorage["z-index"]) + 1;
+            document.querySelector("#card-"+note.id).style.zIndex = localStorage["z-index"];
+        }
         function handleDragEnd(event) {
             // If the item is dropped over a container, set it as the parent
             // otherwise reset the parent to `null`
