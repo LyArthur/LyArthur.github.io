@@ -33,6 +33,7 @@ export default function Apps({datas}) {
                             key={onglet.id}
                             id={onglet.id}
                             title={onglet.description_header}
+                            content={onglet.description}
                         />)})}
                 </Droppable>
             </DndContext>

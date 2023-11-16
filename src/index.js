@@ -24,9 +24,15 @@ function check_borders(){
         let stylee = window.getComputedStyle(card.parentElement);
         let left = parseInt(stylee.getPropertyValue("left"));
         let width = parseInt(stylee.getPropertyValue("width"));
+        let top = parseInt(stylee.getPropertyValue("top"));
+        let height = parseInt(stylee.getPropertyValue("height"));
         if (left+width - window.innerWidth > 0){
             card.parentElement.style.left = left-width-(left - window.innerWidth)+"px";
             localStorage[card.parentElement.id+"-x"] = left-width-(left - window.innerWidth);
+        }
+        if (top < 0){
+            card.parentElement.style.top = "0px";
+            localStorage[card.parentElement.id+"-y"] = 0;
         }
     })
 }

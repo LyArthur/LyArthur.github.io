@@ -2,7 +2,7 @@ import React from "react";
 import { useDraggable,DragOverlay } from "@dnd-kit/core";
 
 
-export function Draggable({ id, styles,title }) {
+export function Draggable({ id, styles,title,content }) {
     const { attributes, listeners, setNodeRef, transform,  } = useDraggable({
         id
     });
@@ -12,10 +12,15 @@ export function Draggable({ id, styles,title }) {
             transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`
         }
         : {};
+    const CustomStyle = {
+        zIndex:'100'
+        //todo
+        //height : '100px"
+    };
     return (
         <div
             ref={setNodeRef}
-            style={{ ...style, ...styles }}
+            style={{ ...style,...CustomStyle, ...styles }}
             id={"card-"+id}
         >
             <div className="card">
@@ -51,6 +56,7 @@ export function Draggable({ id, styles,title }) {
                     <br />
                     <span className="wave">{title} :) </span>
                     <br />
+                    <span>{content}</span>
                     <br />
                 </div>
             </div>

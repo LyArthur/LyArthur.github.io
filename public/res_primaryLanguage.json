@@ -12,7 +12,16 @@
     {
       "id": 1,
       "description_header": "Bonjour",
-      "description": "",
+      "description": "Ut ligula nibh, dictum quis placerat cursus, ullamcorper nec ex. Duis non vestibulum augue. Integer pulvinar id odio sed volutpat. Donec maximus ipsum quam, nec molestie neque convallis quis. Vestibulum pulvinar ornare diam, vel efficitur neque bibendum eu. Proin rhoncus urna sit amet odio iaculis, vitae consequat leo cursus. Nam ac turpis ut nunc accumsan rutrum. Vestibulum tempor efficitur auctor.",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 2,
+      "description_header": "hola",
+      "description": "Ut ligula nibh, dictum quis placerat cursus, ullamcorper nec ex. Duis non vestibulum augue. Integer pulvinar id odio sed volutpat. Donec maximus ipsum quam, nec molestie neque convallis quis. Vestibulum pulvinar ornare diam, vel efficitur neque bibendum eu. Proin rhoncus urna sit amet odio iaculis, vitae consequat leo cursus. Nam ac turpis ut nunc accumsan rutrum. Vestibulum tempor efficitur auctor.",
       "position": {
         "x": 0,
         "y": 0
