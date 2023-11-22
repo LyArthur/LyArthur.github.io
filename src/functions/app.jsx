@@ -1,14 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import {DndContext} from '@dnd-kit/core';
+import {DndContext, PointerSensor, useSensor, useSensors} from '@dnd-kit/core';
 
 import {Droppable} from '../functions/droppable';
 import {Draggable} from '../functions/draggable';
 import {restrictToParentElement} from "@dnd-kit/modifiers";
 import {check_borders} from './checkBordersCards';
+import {MyPointerSensor} from './test';
 function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 export default function Apps({datas}) {
+    const sensors = useSensors(
+        useSensor(MyPointerSensor)
+    )
     const [notes, setNotes] = useState(datas);
     useEffect(() => {
         if (datas) {
@@ -18,7 +22,7 @@ export default function Apps({datas}) {
     }, [datas]);
     if (datas) {
         return (
-            <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow} >
+            <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow} autoScroll={false} sensors={sensors} >
                 <Droppable id={"dropable"}>
                     {datas.map((onglet) => {
                         if (localStorage["card-"+onglet.id+"-x"] === undefined){
@@ -37,6 +41,7 @@ export default function Apps({datas}) {
                             id={onglet.id}
                             title={onglet.description_header}
                             content={onglet.description}
+                            language={onglet.language}
                         />)})}
                 </Droppable>
             </DndContext>
