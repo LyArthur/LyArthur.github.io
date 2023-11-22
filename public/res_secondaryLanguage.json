@@ -1,14 +1,15 @@
 {
   "basic_info": {
-    "description_header": "Hi",
-    "description": "",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
       "skills": "Skills",
       "experience": "Experience & Education",
       "contact": "Contact"
-    }
+    },
+    "titles": [
+      "BTECH Student"
+    ]
   },
   "about": [
     {
