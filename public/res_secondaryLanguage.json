@@ -1,36 +1,85 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience & Education",
-        "contact": "Contact"
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience & Education",
+      "contact": "Contact"
+    }
+  },
+  "about": [
+    {
+      "id": 1,
+      "description_header": "Bonjour",
+      "description": "Ut ligula nibh, dictum quis placerat cursus, ullamcorper nec ex. Duis non vestibulum augue. Integer pulvinar id odio sed volutpat. Donec maximus ipsum quam, nec molestie neque convallis quis. Vestibulum pulvinar ornare diam, vel efficitur neque bibendum eu. Proin rhoncus urna sit amet odio iaculis, vitae consequat leo cursus. Nam ac turpis ut nunc accumsan rutrum. Vestibulum tempor efficitur auctor.",
+      "position": {
+        "x": 0,
+        "y": 0
       }
     },
-    "projects": [
-    ],
+    {
+      "id": 2,
+      "description_header": "My curriculum vitae",
+      "description": "",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "ADP - Automatic Data Processing",
+      "startDate": "2023",
+      "description": "Refonte graphique de la page d'accueil de l'équipe RD",
+      "images": [
+        "images/portfolio/adp/p1.jpg",
+        "images/portfolio/adp/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "name": "Sql",
+          "class": "devicon-mysql-plain"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain"
+        },
+        {
+          "name": "Oracle",
+          "class": "devicon-oracle-original"
+        }
+      ]
+    }
+  ],
   "experience": [
     {
       "icon": "fa fa-graduation-cap",
       "company": "Louis Pergaud High School",
-      "title": "2ème année de BTS SIO",
-      "years": "Septembre 2023 - Aujourd'hui",
+      "title": "2nd year of BTECH",
+      "years": "September 2023 - Now",
       "technologies": [
         "JavaScript",
         "SQL",
         "HTML / CSS",
         "Symfony",
-        "PHP"
+        "PHP",
+        "Doctrine"
       ]
     },
     {
       "icon": "fa fa-briefcase",
       "company": "ADP - Automatic Data Processing",
-      "title": "Stage de première année de BTS SIO",
-      "years": "5 - 30 Juin 2023",
+      "title": "First year BTECH internship",
+      "years": "5 - 30 June 2023",
       "technologies": [
         "JavaScript",
         "SQL",
@@ -40,13 +89,13 @@
         "Oracle",
         "Servlet"
       ],
-      "description": "Refonte de la page d'accueil des outils R&D et de leurs environnements."
+      "description": "Redesign of the home page of R&D tools and their environments."
     },
     {
       "icon": "fa fa-graduation-cap",
-      "company": "Lycée Louis pergaud",
-      "title": "1ère année de BTS SIO",
-      "years": "Septembre 2022 - Juin 2023",
+      "company": "Louis pergaud high school",
+      "title": "1st year of BTECH",
+      "years": "September 2022 - June 2023",
       "technologies": [
         "JavaScript",
         "SQL",
@@ -56,21 +105,21 @@
     },
     {
       "icon": "fa fa-graduation-cap",
-      "company": "Lycée Louis pergaud",
-      "title": "Baccalauréat Général",
-      "years": "Septembre 2019 - Juin 2022",
+      "company": "Louis pergaud high school",
+      "title": "General high school baccalaureate",
+      "years": "September 2019 - June 2022",
       "technologies": [
-        "Numérique et sciences informatiques (NSI)",
-        "Mathématiques",
-        "Physique-chimie"
+        "Digital and computer sciences",
+        "Mathematics",
+        "Physics and chemistry"
       ]
     },
     {
       "icon": "fa fa-briefcase",
       "company": "DELL",
-      "title": "Stage d'observation",
-      "years": "14 - 18 Janvier 2019",
-      "description": "Découverte de l'ensemble des activités et services d'une grande entreprise"
+      "title": "Internship",
+      "years": "14 - 18 January 2019",
+      "description": "Discover all the activities and services of a large company"
     }
   ]
-  }
+}

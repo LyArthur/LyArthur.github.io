@@ -21,7 +21,7 @@
         "class": "devicon-javascript-plain"
       },
       {
-        "name": "Sql",
+        "name": "SQL",
         "class": "devicon-mysql-plain"
       },
       {
@@ -31,6 +31,18 @@
       {
         "name": "Symfony",
         "class": "devicon-symfony-original"
+      },
+      {
+        "name": "PHP",
+        "class": "devicon-php-plain"
+      },
+      {
+        "name": "Doctrine",
+        "class": "devicon-doctrine-plain"
+      },
+      {
+        "name": "Oracle",
+        "class": "devicon-oracle-original"
       }
     ]
   },
@@ -39,7 +51,7 @@
       {
         "name": "github",
         "class": "fa-brands fa-github github",
-        "url": ""
+        "url": "https://github.com/LyArthur"
       },
       {
         "name": "linkedin",

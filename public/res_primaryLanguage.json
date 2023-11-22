@@ -20,15 +20,44 @@
     },
     {
       "id": 2,
-      "description_header": "hola",
-      "description": "Ut ligula nibh, dictum quis placerat cursus, ullamcorper nec ex. Duis non vestibulum augue. Integer pulvinar id odio sed volutpat. Donec maximus ipsum quam, nec molestie neque convallis quis. Vestibulum pulvinar ornare diam, vel efficitur neque bibendum eu. Proin rhoncus urna sit amet odio iaculis, vitae consequat leo cursus. Nam ac turpis ut nunc accumsan rutrum. Vestibulum tempor efficitur auctor.",
+      "description_header": "Mon curriculum vitae",
+      "description": "",
       "position": {
         "x": 0,
         "y": 0
-      }
+      },
+      "language": "fr"
     }
   ],
   "projects": [
+    {
+      "title": "ADP - Automatic Data Processing",
+      "startDate": "2023",
+      "description": "Refonte graphique de la page d'accueil de l'équipe RD",
+      "images": [
+        "images/portfolio/adp/p1.jpg",
+        "images/portfolio/adp/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "name": "Sql",
+          "class": "devicon-mysql-plain"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain"
+        },
+        {
+          "name": "Oracle",
+          "class": "devicon-oracle-original"
+        }
+      ]
+    }
   ],
   "experience": [
     {
@@ -41,7 +70,8 @@
         "SQL",
         "HTML / CSS",
         "Symfony",
-        "PHP"
+        "PHP",
+        "Doctrine"
       ]
     },
     {
