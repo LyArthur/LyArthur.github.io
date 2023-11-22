@@ -9,7 +9,8 @@ class Contact extends Component {
                     <li className="list-inline-item mx-3" key={i}>
             <span>
                 <a className="social-tile"
-                href={contact.url}>
+                href={contact.url}
+                target={"_blank"}>
               <div className="text-center contact-tile">
                 <i className={contact.class} style={{ fontSize: "300%" }}></i>
               </div>
