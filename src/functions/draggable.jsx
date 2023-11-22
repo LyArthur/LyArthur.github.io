@@ -1,10 +1,12 @@
 import React from "react";
-import { useDraggable} from "@dnd-kit/core";
+import {disable, useDraggable} from "@dnd-kit/core";
 
 const cvLink = <p>Cliquez <a href='/Cv_Arthur_LY.pdf' target='_blank'>ici</a> pour voir mon CV !</p>;
-export function Draggable({ id, styles,title,content }) {
+const cvLinkEn = <p>Click <a href='/Cv_Arthur_LY.pdf' target='_blank'>here</a> to see my CV !</p>;
+export function Draggable({ id, styles,title,content,language,draggable }) {
     const { attributes, listeners, setNodeRef, transform,  } = useDraggable({
-        id
+        id,
+        disabled:draggable
     });
 
     const style = transform
@@ -28,14 +30,14 @@ export function Draggable({ id, styles,title,content }) {
                 <div className="card-header" {...listeners}
                      {...attributes}>
                     <span
-                        className="iconify"
+                        className="iconify red"
                         data-icon="emojione:red-circle"
                         data-inline="false"
                     ></span>
                     {" "}
                     &nbsp;{" "}
                     <span
-                        className="iconify"
+                        className="iconify green"
                         data-icon="twemoji:green-circle"
                         data-inline="false"
                     ></span>{" "}
@@ -57,7 +59,7 @@ export function Draggable({ id, styles,title,content }) {
                     <br />
                     <span className="wave">{title}</span>
                     <br />
-                    <span>{<p>{content}</p>}{id===2 ? cvLink : null}</span>
+                    <span>{<p>{content}</p>}{id===2 ? (language === "fr" ? cvLink : cvLinkEn) : null}</span>
                     <br />
                 </div>
             </div>
