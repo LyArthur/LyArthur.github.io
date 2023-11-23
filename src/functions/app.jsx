@@ -34,7 +34,8 @@ export default function Apps({datas}) {
                            fontSize: "3rem",
                            color: "white",
                            rotate: "-90deg",
-                           zIndex: "10000"
+                           zIndex: "10000",
+                           cursor: "pointer"
                        }}
                        onClick={() => {
                            Array.from(document.getElementsByClassName("card")).forEach((card) => {
