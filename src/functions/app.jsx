@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {DndContext, PointerSensor, useSensor, useSensors} from '@dnd-kit/core';
+import {DndContext, useSensor, useSensors} from '@dnd-kit/core';
 
 import {Droppable} from '../functions/droppable';
 import {Draggable} from '../functions/draggable';
