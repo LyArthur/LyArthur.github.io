@@ -45,10 +45,18 @@ class App extends Component {
 
     componentDidMount() {
         this.loadSharedData();
-        this.applyPickedLanguage(
-            window.$primaryLanguage,
-            window.$primaryLanguageIconId
-        );
+        if (localStorage["language"] === 'fr'){
+            this.applyPickedLanguage(
+                window.$primaryLanguage,
+                window.$primaryLanguageIconId
+            );
+        } else {
+            this.applyPickedLanguage(
+                window.$secondaryLanguage,
+                window.$secondaryLanguageIconId
+            );
+        }
+
     }
 
     loadResumeFromPath(path) {
@@ -87,11 +95,12 @@ class App extends Component {
                         resumeBasicInfo={this.state.resumeData.basic_info}/>
                 <div className="col-md-12 mx-auto text-center language">
                     <div
-                        onClick={() =>
+                        onClick={() =>{
+                            localStorage["language"] = 'fr';
                             this.applyPickedLanguage(
                                 window.$primaryLanguage,
                                 window.$primaryLanguageIconId
-                            )
+                            )}
                         }
                         style={{display: "inline"}}
                     >
@@ -103,11 +112,12 @@ class App extends Component {
             ></span>
                     </div>
                     <div
-                        onClick={() =>
+                        onClick={() =>{
+                            localStorage["language"] = 'en';
                             this.applyPickedLanguage(
                                 window.$secondaryLanguage,
                                 window.$secondaryLanguageIconId
-                            )
+                            )}
                         }
                         style={{display: "inline"}}
                     >

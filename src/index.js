@@ -21,7 +21,8 @@ if (!localStorage["theme"]) {
     document.body.setAttribute(dataThemeAttribute, localStorage["theme"]);
 }
 localStorage["z-index"] = 1;
-window.addEventListener("resize",check_borders)
+if (localStorage["language"] === undefined){localStorage["language"] = 'fr'}
+window.addEventListener("resize", check_borders)
 ReactDOM.render(<App/>, document.getElementById('root'));
 serviceWorker.register();
 
