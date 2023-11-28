@@ -1,5 +1,5 @@
 import React from "react";
-import {disable, useDraggable} from "@dnd-kit/core";
+import {useDraggable} from "@dnd-kit/core";
 
 const cvLink = <p>Cliquez <a href='/Cv_Arthur_LY.pdf' target='_blank'>ici</a> pour voir mon CV !</p>;
 const cvLinkEn = <p>Click <a href='/Cv_Arthur_LY.pdf' target='_blank'>here</a> to see my CV !</p>;
