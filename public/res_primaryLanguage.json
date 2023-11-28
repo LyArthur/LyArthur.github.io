@@ -14,8 +14,8 @@
   "about": [
     {
       "id": 1,
-      "description_header": "Bonjour",
-      "description": "Ut ligula nibh, dictum quis placerat cursus, ullamcorper nec ex. Duis non vestibulum augue. Integer pulvinar id odio sed volutpat. Donec maximus ipsum quam, nec molestie neque convallis quis. Vestibulum pulvinar ornare diam, vel efficitur neque bibendum eu. Proin rhoncus urna sit amet odio iaculis, vitae consequat leo cursus. Nam ac turpis ut nunc accumsan rutrum. Vestibulum tempor efficitur auctor.",
+      "description_header": "Bonjour ! :)",
+      "description": "Je suis Arthur LY, étudiant en deuxième année de BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers (SLAM). Passionné par l'univers créatif de la programmation, du développement d'applications et des jeux vidéo, j'ai axé mon parcours académique sur l'acquisition de compétences pointues dans la conception, le déploiement et la maintenance de solutions logicielles.",
       "position": {
         "x": 0,
         "y": 0
@@ -36,7 +36,7 @@
     {
       "title": "ADP - Automatic Data Processing",
       "startDate": "2023",
-      "description": "Refonte graphique de la page d'accueil de l'équipe RD",
+      "description": "En tant que membre de l'équipe de R&D, j'ai entrepris un projet de refonte de la page d'accueil. J'ai créé une base de données sous Oracle pour optimiser le stockage des informations et ai établi le lien entre la base de données nouvellement créée et le serveur web à l'aide de servlet. En parallèle, j'ai élargi les fonctionnalités en introduisant des éléments clés tels que la gestion de favoris et un historique.",
       "images": [
         "images/portfolio/adp/p1.jpg",
         "images/portfolio/adp/p2.jpg"

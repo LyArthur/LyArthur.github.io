@@ -49,16 +49,6 @@
         "name": "github",
         "class": "fa-brands fa-github github",
         "url": "https://github.com/LyArthur"
-      },
-      {
-        "name": "linkedin",
-        "class": "fa-brands fa-linkedin linkedin",
-        "url": ""
-      },
-      {
-        "name": "mail",
-        "class": "fa-regular fa-envelope mail",
-        "url": "mailto:arthur.ly.2004@gmail.com"
       }
     ]
   }
