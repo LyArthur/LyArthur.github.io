@@ -1,0 +1,127 @@
+{
+  "basic_info": {
+    "section_name": {
+      "about": "A propos de moi",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "experience": "Experience & Formation",
+      "contact": "Contact"
+    },
+    "titles": [
+      "Etudiant BTS SIO"
+    ]
+  },
+  "about": [
+    {
+      "id": 1,
+      "description_header": "Bonjour ! :)",
+      "description": "Je suis Arthur LY, étudiant en deuxième année de BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers (SLAM). Passionné par l'univers créatif de la programmation, du développement d'applications et des jeux vidéo, j'ai axé mon parcours académique sur l'acquisition de compétences pointues dans la conception, le déploiement et la maintenance de solutions logicielles.",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 2,
+      "description_header": "Mon curriculum vitae",
+      "description": "",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr"
+    }
+  ],
+  "projects": [
+    {
+      "title": "ADP - Automatic Data Processing",
+      "startDate": "2023",
+      "description": "En tant que membre de l'équipe de R&D, j'ai entrepris un projet de refonte de la page d'accueil. J'ai créé une base de données sous Oracle pour optimiser le stockage des informations et ai établi le lien entre la base de données nouvellement créée et le serveur web à l'aide de servlet. En parallèle, j'ai élargi les fonctionnalités en introduisant des éléments clés tels que la gestion de favoris et un historique.",
+      "images": [
+        "images/portfolio/adp/p1.jpg",
+        "images/portfolio/adp/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "name": "Sql",
+          "class": "devicon-mysql-plain"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain"
+        },
+        {
+          "name": "Oracle",
+          "class": "devicon-oracle-original"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Lycée Louis Pergaud",
+      "title": "2ème année de BTS SIO",
+      "years": "Septembre 2023 - Aujourd'hui",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "HTML / CSS",
+        "Symfony",
+        "PHP",
+        "Doctrine"
+      ]
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "company": "ADP - Automatic Data Processing",
+      "title": "Stage de première année de BTS SIO",
+      "years": "5 - 30 Juin 2023",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Java",
+        "HTML / CSS",
+        "Glassfish",
+        "Oracle",
+        "Servlet"
+      ],
+      "description": "Refonte de la page d'accueil des outils R&D et de leurs environnements."
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Lycée Louis pergaud",
+      "title": "1ère année de BTS SIO",
+      "years": "Septembre 2022 - Juin 2023",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "HTML / CSS",
+        "PHP"
+      ]
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Lycée Louis pergaud",
+      "title": "Baccalauréat Général",
+      "years": "Septembre 2019 - Juin 2022",
+      "technologies": [
+        "Numérique et sciences informatiques (NSI)",
+        "Mathématiques",
+        "Physique-chimie"
+      ]
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "company": "DELL",
+      "title": "Stage d'observation",
+      "years": "14 - 18 Janvier 2019",
+      "description": "Découverte de l'ensemble des activités et services d'une grande entreprise"
+    }
+  ]
+}

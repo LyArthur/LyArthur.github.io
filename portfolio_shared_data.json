@@ -1,0 +1,55 @@
+{
+  "basic_info": {
+    "name": "Arthur Ly",
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain"
+      },
+      {
+        "name": "SQL",
+        "class": "devicon-mysql-plain"
+      },
+      {
+        "name": "Java",
+        "class": "devicon-java-plain"
+      },
+      {
+        "name": "Symfony",
+        "class": "devicon-symfony-original"
+      },
+      {
+        "name": "PHP",
+        "class": "devicon-php-plain"
+      },
+      {
+        "name": "Doctrine",
+        "class": "devicon-doctrine-plain"
+      },
+      {
+        "name": "Oracle",
+        "class": "devicon-oracle-original"
+      }
+    ]
+  },
+  "contact": {
+    "icons": [
+      {
+        "name": "github",
+        "class": "fa-brands fa-github github",
+        "url": "https://github.com/LyArthur"
+      }
+    ]
+  }
+}

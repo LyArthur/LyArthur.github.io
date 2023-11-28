@@ -1,0 +1,126 @@
+{
+  "basic_info": {
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience & Education",
+      "contact": "Contact"
+    },
+    "titles": [
+      "BTECH Student"
+    ]
+  },
+  "about": [
+    {
+      "id": 1,
+      "description_header": "Hey ! :)",
+      "description": "My name is Arthur LY, and I'm a student in my second year of a BTECH, specializing in Software Solutions and Business Applications (SLAM). Passionate about the creative world of programming, application development and video games, I have focused my academic career on acquiring advanced skills in the design, deployment and maintenance of software solutions.",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 2,
+      "description_header": "My curriculum vitae",
+      "description": "",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "ADP - Automatic Data Processing",
+      "startDate": "2023",
+      "description": "As a member of the R&D team, I undertook a project to redesign the home page. I created an Oracle database to optimize information storage, and established the link between the newly created database and the web server using servlets. At the same time, I extended the functionalities by introducing key elements such as bookmark management and a history.",
+      "images": [
+        "images/portfolio/adp/p1.jpg",
+        "images/portfolio/adp/p2.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "name": "Sql",
+          "class": "devicon-mysql-plain"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain"
+        },
+        {
+          "name": "Oracle",
+          "class": "devicon-oracle-original"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Louis Pergaud High School",
+      "title": "2nd year of BTECH",
+      "years": "September 2023 - Now",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "HTML / CSS",
+        "Symfony",
+        "PHP",
+        "Doctrine"
+      ]
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "company": "ADP - Automatic Data Processing",
+      "title": "First year BTECH internship",
+      "years": "5 - 30 June 2023",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Java",
+        "HTML / CSS",
+        "Glassfish",
+        "Oracle",
+        "Servlet"
+      ],
+      "description": "Redesign of the home page of R&D tools and their environments."
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Louis pergaud high school",
+      "title": "1st year of BTECH",
+      "years": "September 2022 - June 2023",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "HTML / CSS",
+        "PHP"
+      ]
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "company": "Louis pergaud high school",
+      "title": "General high school baccalaureate",
+      "years": "September 2019 - June 2022",
+      "technologies": [
+        "Digital and computer sciences",
+        "Mathematics",
+        "Physics and chemistry"
+      ]
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "company": "DELL",
+      "title": "Internship",
+      "years": "14 - 18 January 2019",
+      "description": "Discover all the activities and services of a large company"
+    }
+  ]
+}
