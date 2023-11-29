@@ -25,7 +25,7 @@ export default function Apps({datas}) {
     if (datas) {
         return (
             <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow}
-                        autoScroll={false} sensors={sensors}>
+                        autoScroll={false} sensors={sensors} >
                 <Droppable id={"dropable"}>
                     <i className="fa-solid fa-arrow-rotate-right"
                        style={{

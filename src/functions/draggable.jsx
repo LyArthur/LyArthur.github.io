@@ -29,7 +29,8 @@ export function Draggable({id, styles, title, content, language}) {
                 document.querySelector("#card-" + id).style.zIndex = localStorage["z-index"];
             }}>
                 <div className="card-header" {...listeners}
-                     {...attributes}>
+                     {...attributes}
+                style={{touchAction: 'none'}}>
                     <span
                         className="iconify red"
                         data-icon="emojione:red-circle"
