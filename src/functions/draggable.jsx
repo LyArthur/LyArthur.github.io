@@ -31,7 +31,8 @@ export function Draggable({id, styles, title, content, language}) {
                 <div className="card" onClick={() => {
                     localStorage["z-index"] = parseInt(localStorage["z-index"]) + 1;
                     document.querySelector("#card-" + id).style.zIndex = localStorage["z-index"];
-                }}>
+                }}
+                     style={{touchAction: 'none'}}>
                     <div className="card-header"
                          style={{touchAction: 'none'}}>
                     <span
@@ -59,6 +60,7 @@ export function Draggable({id, styles, title, content, language}) {
                             height: "auto",
                             fontSize: "132%",
                             lineHeight: "200%",
+                            touchAction: 'none'
                         }}
                     >
                         <br/>
