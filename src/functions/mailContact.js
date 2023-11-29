@@ -3,12 +3,20 @@ import emailjs from '@emailjs/browser';
 
 export const ContactUs = () => {
     const form = useRef();
+    function disableForm(form){
+        form.current.submit.disabled = true;
+        form.current.submit.style.cursor = 'not-allowed';
+    }
+    function enableForm(form){
+        form.current.submit.disabled = false;
+        form.current.submit.style.cursor = 'pointer';
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
         const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-        form.current.submit.disabled = true;
-        form.current.submit.style.cursor = 'not-allowed';
+        disableForm(form);
+        //todo faire la verif des mails si vide etc...
         if (emailRegexp.test(form.current.email.value)){
             emailjs.sendForm('service_ihkfivr', 'template_4bj6r8k', form.current, 'lsN6WThGlV0hYHzTI')
                 .then((result) => {
@@ -16,17 +24,14 @@ export const ContactUs = () => {
                     form.current.email.value= "";
                     form.current.message.value= "";
                     alert("Le message a bien été envoyé !");
-                    form.current.submit.disabled = false;
-                    form.current.submit.style.cursor = 'pointer';
+                    enableForm(form)
                 }, (error) => {
                     alert("il y a eu un problème");
-                    form.current.submit.disabled = false;
-                    form.current.submit.style.cursor = 'pointer';
+                    enableForm(form)
                 });
         } else {
             alert("il y a eu un problème");
-            form.current.submit.disabled = false;
-            form.current.submit.style.cursor = 'pointer';
+            enableForm(form)
         }
     };
 
