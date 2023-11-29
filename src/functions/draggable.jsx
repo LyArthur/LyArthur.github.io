@@ -3,10 +3,10 @@ import {useDraggable} from "@dnd-kit/core";
 
 const cvLink = <p>Cliquez <a href='/Cv_Arthur_LY.pdf' target='_blank'>ici</a> pour voir mon CV !</p>;
 const cvLinkEn = <p>Click <a href='/Cv_Arthur_LY.pdf' target='_blank'>here</a> to see my CV !</p>;
-export function Draggable({ id, styles,title,content,language,draggable }) {
-    const { attributes, listeners, setNodeRef, transform,  } = useDraggable({
-        id,
-        disabled:draggable
+
+export function Draggable({id, styles, title, content, language}) {
+    const {attributes, listeners, setNodeRef, transform,} = useDraggable({
+        id
     });
 
     const style = transform
@@ -15,17 +15,18 @@ export function Draggable({ id, styles,title,content,language,draggable }) {
         }
         : {};
     const CustomStyle = {
-        height : '31px'
+        height: '31px',
+        touchAction: 'none'
     };
     return (
         <div
             ref={setNodeRef}
-            style={{ ...style,...CustomStyle, ...styles }}
-            id={"card-"+id}
+            style={{...style, ...CustomStyle, ...styles}}
+            id={"card-" + id}
         >
             <div className="card" onClick={() => {
                 localStorage["z-index"] = parseInt(localStorage["z-index"]) + 1;
-                document.querySelector("#card-"+id).style.zIndex = localStorage["z-index"];
+                document.querySelector("#card-" + id).style.zIndex = localStorage["z-index"];
             }}>
                 <div className="card-header" {...listeners}
                      {...attributes}>
@@ -56,11 +57,11 @@ export function Draggable({ id, styles,title,content,language,draggable }) {
                         lineHeight: "200%",
                     }}
                 >
-                    <br />
+                    <br/>
                     <span className="wave">{title}</span>
-                    <br />
-                    <span>{<p>{content}</p>}{id===2 ? (language === "fr" ? cvLink : cvLinkEn) : null}</span>
-                    <br />
+                    <br/>
+                    <span>{<p>{content}</p>}{id === 2 ? (language === "fr" ? cvLink : cvLinkEn) : null}</span>
+                    <br/>
                 </div>
             </div>
         </div>
