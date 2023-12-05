@@ -7,6 +7,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+	overflow-y: unset;
 }
 
 .aligner {
@@ -443,9 +444,15 @@ header h1 {
 	.portfolio .portfolio-item {
 		margin-bottom: 30px;
 	}
+
 }
 @media only screen and (max-width: 576px){
 	.card{min-width: 30vw !important;}
+	#about{
+		span p{
+			font-size: unset;
+		}
+	}
 }
 
 #skills,#contact {
