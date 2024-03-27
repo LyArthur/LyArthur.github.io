@@ -64,6 +64,21 @@
   ],
   "experience": [
     {
+      "icon": "fa fa-briefcase",
+      "company": "AAE - Académie de l'air et de l'espace",
+      "title": "Stage de deuxième année de BTS SIO",
+      "years": "29 Janvier - 22 Mars 2024",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Wordpress",
+        "PHP",
+        "React Native",
+        "Expo"
+      ],
+      "description": "Conception d’une application mobile et développement du site web"
+    },
+    {
       "icon": "fa fa-graduation-cap",
       "company": "Lycée Louis Pergaud",
       "title": "2ème année de BTS SIO",
