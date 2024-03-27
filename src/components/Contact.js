@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {ContactUs} from '../functions/mailContact';
+import {ContactUs} from '../functions/contact/mailContact';
 
 class Contact extends Component {
     constructor(props) {

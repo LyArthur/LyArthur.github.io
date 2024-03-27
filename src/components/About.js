@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Apps from "../functions/app";
+import DnDAbout from "../functions/about/dndAbout";
 
 class About extends Component {
   render() {
@@ -44,7 +44,7 @@ class About extends Component {
 
             <div className="col-md-8 center tab">
               <div className="col-md-10">
-                <Apps datas={datas}></Apps>
+                <DnDAbout datas={datas}></DnDAbout>
               </div>
             </div>
             <div className="col-md-10">

@@ -4,7 +4,7 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {check_borders} from './functions/checkBordersCards';
+import {check_borders} from './functions/about/checkBordersCards';
 /* GLOBAL VARIABLES */
 
 window.$primaryLanguage = 'fr';

@@ -1,17 +1,24 @@
 import React, {useEffect, useState} from 'react';
 import {DndContext, useSensor, useSensors} from '@dnd-kit/core';
 
-import {Droppable} from '../functions/droppable';
-import {Draggable} from '../functions/draggable';
+import {Droppable} from './droppable';
+import {Draggable} from './draggable';
 import {restrictToParentElement} from "@dnd-kit/modifiers";
 import {check_borders} from './checkBordersCards';
-import {MyPointerSensor} from './test';
+import {MyPointerSensor} from './pointerSensor';
 
 function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-export default function Apps({datas}) {
+function move(element, x, y) {
+    element.style.left = x + "px";
+    localStorage[element.id + "-x"] = x;
+    element.style.top = y + "px";
+    localStorage[element.id + "-y"] = y;
+}
+
+export default function DnDAbout({datas}) {
     const sensors = useSensors(
         useSensor(MyPointerSensor)
     )
@@ -25,7 +32,7 @@ export default function Apps({datas}) {
     if (datas) {
         return (
             <DndContext onDragEnd={handleDragEnd} modifiers={[restrictToParentElement]} onDragStart={showWindow}
-                        autoScroll={false} sensors={sensors} >
+                        autoScroll={false} sensors={sensors}>
                 <Droppable id={"dropable"}>
                     <i className="fa-solid fa-arrow-rotate-right"
                        style={{
@@ -37,24 +44,30 @@ export default function Apps({datas}) {
                            cursor: "pointer"
                        }}
                        onClick={() => {
-                           Array.from(document.getElementsByClassName("card")).forEach((card) => {
-                               card.style.display = "block";
-                               let x = randomIntFromInterval(25, window.innerWidth - parseInt(window.getComputedStyle(card).getPropertyValue("width")) - 25);
-                               let y = randomIntFromInterval(0, window.innerHeight * 0.4);
-                               console.log(x, y);
-                               card.parentElement.style.left = x + "px";
-                               localStorage[card.parentElement.id + "-x"] = x;
-                               card.parentElement.style.top = y + "px";
-                               localStorage[card.parentElement.id + "-y"] = y;
-                           })
+                           let cards = document.getElementsByClassName("card");
+                           let bio = cards[0];
+                           let cv = cards[1];
+                           cv.style.display = "block";
+                           bio.style.display = "block";
+
+                           let bioWidth = parseInt(window.getComputedStyle(bio).width);
+                           let cvWidth = parseInt(window.getComputedStyle(cv).width);
+
+                           if (window.innerWidth + 100 < bioWidth + cvWidth) {
+                               move(cv.parentElement, 0, 0);
+                               move(bio.parentElement, 0, parseInt(window.getComputedStyle(cv).height) + 20)
+                           } else {
+                               move(bio.parentElement, 0, 0);
+                               move(cv.parentElement, bioWidth + 20, 0)
+                           }
                        }}
                     ></i>
                     {datas.map((onglet) => {
                         if (localStorage["card-" + onglet.id + "-x"] === undefined) {
-                            localStorage["card-" + onglet.id + "-x"] = randomIntFromInterval(25, window.innerWidth - 25);
+                            localStorage["card-" + onglet.id + "-x"] = onglet.id === 2 && window.innerWidth > 1100 ? 520 : 0;
                         }
                         if (localStorage["card-" + onglet.id + "-y"] === undefined) {
-                            localStorage["card-" + onglet.id + "-y"] = randomIntFromInterval(0, window.innerHeight * 0.4);
+                            localStorage["card-" + onglet.id + "-y"] = onglet.id === 1 && window.innerWidth < 1100 ? 200 : 0;
                         }
                         return (<Draggable
                             styles={{
