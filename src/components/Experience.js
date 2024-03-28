@@ -57,7 +57,7 @@ class Experience extends Component {
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
-            >{work.url ? <a href="#">{work.company}</a> : work.company}
+            >{work.url ? <a href={work.url} style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer">{work.company}</a> : work.company}
             </h4>
             <h5 style={{marginTop : "10px"} }>{work.description}</h5>
             <div style={{ textAlign: "left", marginTop: "15px",overflow: "hidden" }}>{tech}</div>

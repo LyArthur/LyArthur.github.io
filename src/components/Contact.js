@@ -17,7 +17,8 @@ class Contact extends Component {
             <span>
                 <a  className="social-tile"
                     href={contact.url}
-                    target={"_blank"}>
+                    target={"_blank"}
+                    rel="noopener noreferrer">
                   <img src={`./svgIcons/${contact.svg}.svg`} style={{width:50,height:50,fill:"#ffffff"}}></img>
                     </a>
             </span>

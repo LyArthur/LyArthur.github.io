@@ -7,7 +7,7 @@ class Skills extends Component {
             var skills = this.props.sharedSkills.icons.map(function (skills, i) {
                 return (<li className="list-inline-item mx-3" key={i}>
             <span>
-                <a href={skills.url} className="skills-tile-href" target="_blank">
+                <a href={skills.url} className="skills-tile-href" target="_blank" rel="noopener noreferrer">
                 <div className="text-center skills-tile">
                         <img src={`./svgIcons/${skills.svg}.svg`} style={{width: 50, height: 50}}></img>
                         <p

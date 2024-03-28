@@ -82,7 +82,7 @@ class ProjectDetailsModal extends Component {
               {url ? (
                 <a
                   href={url}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   rel="noopener noreferrer"
                   className="link-href"
                 >
