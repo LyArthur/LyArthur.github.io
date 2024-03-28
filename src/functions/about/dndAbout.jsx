@@ -7,10 +7,6 @@ import {restrictToParentElement} from "@dnd-kit/modifiers";
 import {check_borders} from './checkBordersCards';
 import {MyPointerSensor} from './pointerSensor';
 
-function randomIntFromInterval(min, max) { // min and max included
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
 function move(element, x, y) {
     element.style.left = x + "px";
     localStorage[element.id + "-x"] = x;
