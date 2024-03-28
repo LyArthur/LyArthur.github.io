@@ -66,6 +66,7 @@
     {
       "icon": "fa fa-briefcase",
       "company": "AAE - Académie de l'air et de l'espace",
+      "url": "https://academieairespace.com/",
       "title": "Stage de deuxième année de BTS SIO",
       "years": "29 Janvier - 22 Mars 2024",
       "technologies": [
@@ -95,6 +96,7 @@
     {
       "icon": "fa fa-briefcase",
       "company": "ADP - Automatic Data Processing",
+      "url":  "https://www.fr.adp.com/",
       "title": "Stage de première année de BTS SIO",
       "years": "5 - 30 Juin 2023",
       "technologies": [

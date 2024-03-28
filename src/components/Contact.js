@@ -7,6 +7,7 @@ class Contact extends Component {
         this.state = {name: '', mail: '', object: '', message: ''};
 
     }
+
     render() {
         if (this.props.resumeContact && this.props.resumeBasicInfo) {
             var sectionName = this.props.resumeBasicInfo.section_name.contact;
@@ -14,11 +15,10 @@ class Contact extends Component {
                 return (
                     <li className="list-inline-item mx-3" key={i}>
             <span>
-                <a className="social-tile"
-                   href={contact.url}>
-              <div className="text-center contact-tile">
-                <i className={contact.class} style={{fontSize: "300%"}}></i>
-              </div>
+                <a  className="social-tile"
+                    href={contact.url}
+                    target={"_blank"}>
+                  <img src={`./svgIcons/${contact.svg}.svg`} style={{width:50,height:50,fill:"#ffffff"}}></img>
                     </a>
             </span>
                     </li>

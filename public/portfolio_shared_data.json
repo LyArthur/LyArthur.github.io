@@ -6,40 +6,64 @@
   "skills": {
     "icons": [
       {
+        "name": "Wordpress",
+        "svg": "wordpress",
+        "url": "https://fr.wordpress.org/"
+      },
+      {
         "name": "HTML 5",
-        "class": "devicon-html5-plain"
+        "svg": "html",
+        "url": "https://developer.mozilla.org/en/docs/Glossary/HTML5"
       },
       {
         "name": "CSS 3",
-        "class": "devicon-css3-plain"
+        "svg": "css",
+        "url": "https://developer.mozilla.org/en/docs/Web/CSS"
       },
       {
         "name": "JavaScript",
-        "class": "devicon-javascript-plain"
-      },
-      {
-        "name": "SQL",
-        "class": "devicon-mysql-plain"
+        "svg": "javascript",
+        "url": "https://developer.mozilla.org/en/docs/Web/JavaScript"
       },
       {
         "name": "Java",
-        "class": "devicon-java-plain"
+        "svg": "java",
+        "url": "https://www.java.com/en/download/help/whatis_java.html"
       },
       {
-        "name": "Symfony",
-        "class": "devicon-symfony-original"
+        "name": "React",
+        "svg": "react",
+        "url": "https://react.dev/"
+      },
+      {
+        "name": "Expo",
+        "svg": "expo",
+        "url": "https://expo.dev/"
       },
       {
         "name": "PHP",
-        "class": "devicon-php-plain"
+        "svg": "php",
+        "url": "https://www.php.net/manual/en/intro-whatis.php"
       },
       {
-        "name": "Doctrine",
-        "class": "devicon-doctrine-plain"
+        "name": "Symfony",
+        "svg": "symfony",
+        "url": "https://symfony.com/what-is-symfony"
+      },
+      {
+        "name": "SQL",
+        "svg": "sql",
+        "url": "https://sql.sh/"
       },
       {
         "name": "Oracle",
-        "class": "devicon-oracle-original"
+        "svg": "oracle",
+        "url": "https://www.oracle.com/erp/"
+      },
+      {
+        "name": "Doctrine",
+        "svg": "doctrine",
+        "url": "https://www.doctrine-project.org/"
       }
     ]
   },
@@ -47,8 +71,13 @@
     "icons": [
       {
         "name": "github",
-        "class": "fa-brands fa-github github",
+        "svg": "github",
         "url": "https://github.com/LyArthur"
+      },
+      {
+        "name": "root-me",
+        "svg": "root-me",
+        "url": "https://www.root-me.org/Nekute"
       }
     ]
   }
