@@ -51,7 +51,7 @@ export const ContactUs = () => {
                     <input
                         title="Inpit title"
                         name="email"
-                        type="text"
+                        type="email"
                         className="input_field"
                         id="email_field"
                         required={true}/>

@@ -135,7 +135,8 @@
     },
     {
       "icon": "fa fa-briefcase",
-      "company": "DELL",
+      "company": "DELL - Dell Technologies",
+      "url" : "https://www.dell.com/fr-fr",
       "title": "Stage d'observation",
       "years": "14 - 18 Janvier 2019",
       "description": "Découverte de l'ensemble des activités et services d'une grande entreprise"
