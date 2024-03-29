@@ -64,6 +64,22 @@
   ],
   "experience": [
     {
+      "icon": "fa fa-briefcase",
+      "company": "AAE - Académie de l'air et de l'espace",
+      "url": "https://academieairespace.com/",
+      "title": "Stage de deuxième année de BTS SIO",
+      "years": "29 Janvier - 22 Mars 2024",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Wordpress",
+        "PHP",
+        "React Native",
+        "Expo"
+      ],
+      "description": "Conception d’une application mobile et développement du site web"
+    },
+    {
       "icon": "fa fa-graduation-cap",
       "company": "Lycée Louis Pergaud",
       "title": "2ème année de BTS SIO",
@@ -80,6 +96,7 @@
     {
       "icon": "fa fa-briefcase",
       "company": "ADP - Automatic Data Processing",
+      "url":  "https://www.fr.adp.com/",
       "title": "Stage de première année de BTS SIO",
       "years": "5 - 30 Juin 2023",
       "technologies": [
@@ -118,7 +135,8 @@
     },
     {
       "icon": "fa fa-briefcase",
-      "company": "DELL",
+      "company": "DELL - Dell Technologies",
+      "url" : "https://www.dell.com/fr-fr",
       "title": "Stage d'observation",
       "years": "14 - 18 Janvier 2019",
       "description": "Découverte de l'ensemble des activités et services d'une grande entreprise"
