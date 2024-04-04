@@ -8,7 +8,6 @@ class Footer extends Component {
         <div className="col-md-12">
           <div className="copyright py-4 text-center">
             <div className="container">
-                Copyright &copy;{" | "}
                 {this.props.sharedBasicInfo
                   ? this.props.sharedBasicInfo.name
                   : "???"}
