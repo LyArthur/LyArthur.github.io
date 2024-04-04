@@ -36,6 +36,7 @@
       "title": "ADP - Automatic Data Processing",
       "startDate": "2023",
       "description": "As a member of the R&D team, I undertook a project to redesign the home page. I created an Oracle database to optimize information storage, and established the link between the newly created database and the web server using servlets. At the same time, I extended the functionalities by introducing key elements such as bookmark management and a history.",
+      "image" : "images/portfolio/adp/adp.png",
       "images": [
         "images/portfolio/adp/p1.jpg",
         "images/portfolio/adp/p2.jpg"

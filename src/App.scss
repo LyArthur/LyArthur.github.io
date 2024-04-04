@@ -1,6 +1,8 @@
 @import '../src/scss/themes/theme-dark.scss';
 @import '../src/scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 html {
 	font-size: 62.5%;
@@ -198,23 +200,22 @@ header h1 {
 .foto img {
 	display: block;
 	width: 100%;
+	-webkit-transition: all 0.3s cubic-bezier(0,0,.2,1);
+	-moz-transition: all 0.3s cubic-bezier(0,0,.2,1);
+	transition: all 0.3s cubic-bezier(0,0,.2,1);
 }
 
 .foto div {
-	background: #ffffff;
+	width: 100%;
+	overflow: hidden;
 	display: inline-block;
-	margin: 0 auto 5% auto;
-	padding: 10px 10px 5px;
+	margin: 0 auto;
 	text-align: center;
 	text-decoration: none;
-	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	-webkit-transition: all .20s linear;
-	-moz-transition: all .20s linear;
-	transition: all .20s linear;
 	z-index: 0;
 	position: relative;
+	border-radius: .5rem;
+
 }
 
 .foto div:after {
@@ -225,23 +226,28 @@ header h1 {
 	top: 15px;
 }
 
-.foto div:hover {
-	-webkit-transform: scale(1.01);
-	-moz-transform: scale(1.01);
-	transform: scale(1.01);
+.foto img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+	transition: all 0.3s cubic-bezier(0,0,.2,1);
 	z-index: 10;
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 
-.project-title-settings {
-	margin-top: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
+.project-title-settings, .project-title-job{
+    margin-top: 1.25rem;
+	font: 1.875rem 'Hind', sans-serif;
+	line-height: 2.25rem;
+	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: black;
-	text-align: center;
+	text-align: left;
+}
+.project-title-job{
+  text-transform: initial;
+  color: black;
+  opacity: 0.6;
 }
 
 .polaroid img {

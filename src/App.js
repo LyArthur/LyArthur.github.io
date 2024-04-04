@@ -1,13 +1,13 @@
 import React, {Component} from "react";
 import $ from "jquery";
 import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Header from "./categories/_partials/Header";
+import Footer from "./categories/_partials/Footer";
+import About from "./categories/About/About";
+import Experience from "./categories/Experience/Experience";
+import Projects from "./categories/Project/Projects";
+import Skills from "./categories/Skills/Skills";
+import Contact from "./categories/Contact/Contact";
 
 class App extends Component {
 
@@ -136,9 +136,10 @@ class App extends Component {
                 <Projects
                     resumeProjects={this.state.resumeData.projects}
                     resumeBasicInfo={this.state.resumeData.basic_info}
+                    sharedIcons={this.state.sharedData.icons}
                 />
                 <Skills
-                    sharedSkills={this.state.sharedData.skills}
+                    sharedIcons={this.state.sharedData.icons}
                     resumeBasicInfo={this.state.resumeData.basic_info}
                 />
                 <Experience

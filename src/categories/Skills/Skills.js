@@ -2,19 +2,20 @@ import React, {Component} from "react";
 
 class Skills extends Component {
     render() {
-        if (this.props.sharedSkills && this.props.resumeBasicInfo) {
+        if (this.props.sharedIcons && this.props.resumeBasicInfo) {
             var sectionName = this.props.resumeBasicInfo.section_name.skills;
-            var skills = this.props.sharedSkills.icons.map(function (skills, i) {
-                return (<li className="list-inline-item mx-3" key={i}>
+            var skillsArray = Object.entries(this.props.sharedIcons);
+            var skills = skillsArray.map(([name, skill]) => {
+                return (<li className="list-inline-item mx-3" key={name}>
             <span>
-                <a href={skills.url} className="skills-tile-href" target="_blank" rel="noopener noreferrer">
+                <a href={skill.url} className="skills-tile-href" target="_blank" rel="noopener noreferrer">
                 <div className="text-center skills-tile">
-                        <img src={`./svgIcons/${skills.svg}.svg`} style={{width: 50, height: 50}}></img>
+                        <img src={`./svgIcons/${skill.svg}.svg`} style={{width: 50, height: 50}}></img>
                         <p
                             className="text-center"
                             style={{fontSize: "70%", marginTop: "4px"}}
                         >
-                        {skills.name}
+                        {name}
                         </p>
                 </div>
                 </a>

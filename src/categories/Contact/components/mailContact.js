@@ -17,7 +17,7 @@ export const ContactUs = () => {
         const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
         disableForm(form);
         if (emailRegexp.test(form.current.email.value)){
-            emailjs.sendForm('service_ihkfivr', 'template_4bj6r8k', form.current, 'lsN6WThGlV0hYHzTI')
+            emailjs.sendForm('service_xga7du4', 'template_7de95tr', form.current, 'q6Kh82buacA_CtGTi')
                 .then((result) => {
                     form.current.name.value= "";
                     form.current.email.value= "";
@@ -66,7 +66,7 @@ export const ContactUs = () => {
                         required={true}/>
                     <label className="input_label" htmlFor="message_field">Message</label>
                 </div>
-                <input className="submit" name="submit" type="submit" value="Submit"/>
+                <input className="submit" name="submit" type="submit" value={localStorage['language']==="fr" ? "Envoyer" : "Submit"}/>
             </form>
         </div>
     );

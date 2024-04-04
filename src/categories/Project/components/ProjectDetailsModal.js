@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
-import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
+import AwesomeSliderStyles from "../../../scss/light-slider.scss";
+import AwesomeSliderStyles2 from "../../../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 class ProjectDetailsModal extends Component {
   render() {
@@ -17,36 +17,40 @@ class ProjectDetailsModal extends Component {
           return (
             <li className="list-inline-item mx-3" key={i}>
               <span>
-                <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
-                  </i>
+                <a href={icons.url} className="skills-tile-href" target="_blank" rel="noopener noreferrer">
+                <div className="text-center skills-tile">
+                        <img src={`./svgIcons/${icons.svg}.svg`} style={{width: 50, height: 50}}></img>
+                        <p
+                            className="text-center"
+                            style={{fontSize: "70%", marginTop: "4px"}}
+                        >
+                        {icons.name}
+                        </p>
                 </div>
+                </a>
               </span>
             </li>
           );
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            return <div key={i} data-src={elem}/>;
           });
         }
       }
     }
     return (
-      <Modal
-        {...this.props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-        className="modal-inside"
-      >
+        <Modal
+            {...this.props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            className="modal-inside"
+        >
         <span onClick={this.props.onHide} className="modal-close">
           <i className="fas fa-times fa-3x close-icon"></i>
         </span>
-        <div className="col-md-12">
+          <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
             <div className="slider-tab">
               <span

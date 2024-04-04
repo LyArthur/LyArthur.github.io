@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import DnDAbout from "../functions/about/dndAbout";
+import DnDAbout from "./components/dndAbout";
 
 class About extends Component {
   render() {
