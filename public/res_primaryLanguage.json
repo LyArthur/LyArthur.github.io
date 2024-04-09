@@ -44,18 +44,12 @@
       ],
       "url": "",
       "technologies": [
-        {
-          "name": "sql"
-        },
-        {
-          "name": "java"
-        },
-        {
-          "name": "javascript"
-        },
-        {
-          "name": "oracle"
-        }
+        "HTML",
+        "CSS",
+        "Java",
+        "JavaScript",
+        "Oracle",
+        "SQL"
       ]
     },
     {
@@ -69,22 +63,12 @@
       ],
       "url": "",
       "technologies": [
-        {
-          "name": "Sql",
-          "class": "devicon-mysql-plain"
-        },
-        {
-          "name": "Java",
-          "class": "devicon-java-plain"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain"
-        },
-        {
-          "name": "Oracle",
-          "class": "devicon-oracle-original"
-        }
+        "JavaScript",
+        "SQL",
+        "Wordpress",
+        "PHP",
+        "React",
+        "Expo"
       ]
     }
   ],

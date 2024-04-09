@@ -27,11 +27,11 @@
       "svg": "wordpress",
       "url": "https://fr.wordpress.org/"
     },
-    "HTML 5": {
+    "HTML": {
       "svg": "html",
       "url": "https://developer.mozilla.org/en/docs/Glossary/HTML5"
     },
-    "CSS 3": {
+    "CSS": {
       "svg": "css",
       "url": "https://developer.mozilla.org/en/docs/Web/CSS"
     },
