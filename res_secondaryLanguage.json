@@ -36,28 +36,32 @@
       "title": "ADP - Automatic Data Processing",
       "startDate": "2023",
       "description": "As a member of the R&D team, I undertook a project to redesign the home page. I created an Oracle database to optimize information storage, and established the link between the newly created database and the web server using servlets. At the same time, I extended the functionalities by introducing key elements such as bookmark management and a history.",
+      "image" : "images/portfolio/adp/adp.png",
       "images": [
         "images/portfolio/adp/p1.jpg",
         "images/portfolio/adp/p2.jpg"
       ],
       "url": "",
       "technologies": [
-        {
-          "name": "Sql",
-          "class": "devicon-mysql-plain"
-        },
-        {
-          "name": "Java",
-          "class": "devicon-java-plain"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain"
-        },
-        {
-          "name": "Oracle",
-          "class": "devicon-oracle-original"
-        }
+        "SQL",
+        "Java",
+        "JavaScript",
+        "Oracle"
+      ]
+    },
+    {
+      "title": "AAE - Academy of Air and Space",
+      "job" : "Web Developper",
+      "description": "During my internship as a web developer at the Académie de l'air et de l'espace, I contributed to a variety of rewarding projects. I developed voting and sponsorship applications for the extranet site, designed a history system for profile modifications and created a mobile application for Android and iOS to simplify access to information for members. This internship gave me hands-on experience in web development, improved my technical skills and strengthened my sense of teamwork.",
+      "image" : "images/portfolio/aae/aae.png",
+      "url": "",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Wordpress",
+        "PHP",
+        "React",
+        "Expo"
       ]
     }
   ],

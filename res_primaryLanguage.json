@@ -35,30 +35,34 @@
   "projects": [
     {
       "title": "ADP - Automatic Data Processing",
-      "startDate": "2023",
+      "job": "Développeur web",
       "description": "En tant que membre de l'équipe de R&D, j'ai entrepris un projet de refonte de la page d'accueil. J'ai créé une base de données sous Oracle pour optimiser le stockage des informations et ai établi le lien entre la base de données nouvellement créée et le serveur web à l'aide de servlet. En parallèle, j'ai élargi les fonctionnalités en introduisant des éléments clés tels que la gestion de favoris et un historique.",
+      "image": "images/portfolio/adp/adp.png",
       "images": [
         "images/portfolio/adp/p1.jpg",
         "images/portfolio/adp/p2.jpg"
       ],
       "url": "",
       "technologies": [
-        {
-          "name": "Sql",
-          "class": "devicon-mysql-plain"
-        },
-        {
-          "name": "Java",
-          "class": "devicon-java-plain"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain"
-        },
-        {
-          "name": "Oracle",
-          "class": "devicon-oracle-original"
-        }
+        "Java",
+        "JavaScript",
+        "Oracle",
+        "SQL"
+      ]
+    },
+    {
+      "title": "AAE - Académie de l'Air et de l'Espace",
+      "job": "Développeur web",
+      "description": "Durant mon stage en tant que développeur web à l'Académie de l'air et de l'espace, j'ai contribué à divers projets enrichissants. J'ai développé des applications de vote et de parrainage pour le site extranet, conçu un système d'historique pour les modifications de profil et créé une application mobile pour Android et iOS afin de simplifier l'accès aux informations pour les membres. Ce stage m'a permis d'acquérir une expérience concrète en développement web, d'améliorer mes compétences techniques et de renforcer mon sens du travail en équipe.",
+      "image": "images/portfolio/aae/aae.png",
+      "url": "",
+      "technologies": [
+        "JavaScript",
+        "SQL",
+        "Wordpress",
+        "PHP",
+        "React",
+        "Expo"
       ]
     }
   ],
@@ -96,7 +100,7 @@
     {
       "icon": "fa fa-briefcase",
       "company": "ADP - Automatic Data Processing",
-      "url":  "https://www.fr.adp.com/",
+      "url": "https://www.fr.adp.com/",
       "title": "Stage de première année de BTS SIO",
       "years": "5 - 30 Juin 2023",
       "technologies": [
@@ -136,7 +140,7 @@
     {
       "icon": "fa fa-briefcase",
       "company": "DELL - Dell Technologies",
-      "url" : "https://www.dell.com/fr-fr",
+      "url": "https://www.dell.com/fr-fr",
       "title": "Stage d'observation",
       "years": "14 - 18 Janvier 2019",
       "description": "Découverte de l'ensemble des activités et services d'une grande entreprise"
