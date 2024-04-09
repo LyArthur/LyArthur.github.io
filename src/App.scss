@@ -11,6 +11,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-y: unset;
+  scroll-behavior: smooth;
 }
 
 .aligner {
@@ -32,7 +33,37 @@ html {
   height: 150px;
   width: 150px;
 }
+.navigation {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 1rem;
+}
+
+.navigation ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navigation ul li a.active {
+  border-bottom: 2px solid black;
+}
 header {
   position: relative;
   height: 520px;

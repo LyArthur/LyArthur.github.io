@@ -3,6 +3,7 @@ import $ from "jquery";
 import "./App.scss";
 import Header from "./categories/_partials/Header";
 import Footer from "./categories/_partials/Footer";
+import Navigation from "./categories/_partials/Navigation";
 import About from "./categories/About/About";
 import Experience from "./categories/Experience/Experience";
 import Projects from "./categories/Project/Projects";
@@ -45,7 +46,7 @@ class App extends Component {
 
     componentDidMount() {
         this.loadSharedData();
-        if (localStorage["language"] === 'fr'){
+        if (localStorage["language"] === 'fr') {
             this.applyPickedLanguage(
                 window.$primaryLanguage,
                 window.$primaryLanguageIconId
@@ -91,16 +92,18 @@ class App extends Component {
     render() {
         return (
             <div>
+                <Navigation />
                 <Header sharedData={this.state.sharedData.basic_info}
                         resumeBasicInfo={this.state.resumeData.basic_info}/>
                 <div className="col-md-12 mx-auto text-center language">
                     <div
-                        onClick={() =>{
+                        onClick={() => {
                             localStorage["language"] = 'fr';
                             this.applyPickedLanguage(
                                 window.$primaryLanguage,
                                 window.$primaryLanguageIconId
-                            )}
+                            )
+                        }
                         }
                         style={{display: "inline"}}
                     >
@@ -112,12 +115,13 @@ class App extends Component {
             ></span>
                     </div>
                     <div
-                        onClick={() =>{
+                        onClick={() => {
                             localStorage["language"] = 'en';
                             this.applyPickedLanguage(
                                 window.$secondaryLanguage,
                                 window.$secondaryLanguageIconId
-                            )}
+                            )
+                        }
                         }
                         style={{display: "inline"}}
                     >
