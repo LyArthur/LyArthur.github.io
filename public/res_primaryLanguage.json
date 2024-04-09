@@ -35,17 +35,15 @@
   "projects": [
     {
       "title": "ADP - Automatic Data Processing",
-      "job" : "Web Developper",
+      "job": "Développeur web",
       "description": "En tant que membre de l'équipe de R&D, j'ai entrepris un projet de refonte de la page d'accueil. J'ai créé une base de données sous Oracle pour optimiser le stockage des informations et ai établi le lien entre la base de données nouvellement créée et le serveur web à l'aide de servlet. En parallèle, j'ai élargi les fonctionnalités en introduisant des éléments clés tels que la gestion de favoris et un historique.",
-      "image" : "images/portfolio/adp/adp.png",
+      "image": "images/portfolio/adp/adp.png",
       "images": [
         "images/portfolio/adp/p1.jpg",
         "images/portfolio/adp/p2.jpg"
       ],
       "url": "",
       "technologies": [
-        "HTML",
-        "CSS",
         "Java",
         "JavaScript",
         "Oracle",
@@ -54,13 +52,9 @@
     },
     {
       "title": "AAE - Académie de l'Air et de l'Espace",
-      "job" : "Web Developper",
-      "description": "En tant que membre de l'équipe de R&D, j'ai entrepris un projet de refonte de la page d'accueil. J'ai créé une base de données sous Oracle pour optimiser le stockage des informations et ai établi le lien entre la base de données nouvellement créée et le serveur web à l'aide de servlet. En parallèle, j'ai élargi les fonctionnalités en introduisant des éléments clés tels que la gestion de favoris et un historique.",
-      "image" : "images/portfolio/aae/aae.png",
-      "images": [
-        "images/portfolio/adp/p1.jpg",
-        "images/portfolio/adp/p2.jpg"
-      ],
+      "job": "Développeur web",
+      "description": "Durant mon stage en tant que développeur web à l'Académie de l'air et de l'espace, j'ai contribué à divers projets enrichissants. J'ai développé des applications de vote et de parrainage pour le site extranet, conçu un système d'historique pour les modifications de profil et créé une application mobile pour Android et iOS afin de simplifier l'accès aux informations pour les membres. Ce stage m'a permis d'acquérir une expérience concrète en développement web, d'améliorer mes compétences techniques et de renforcer mon sens du travail en équipe.",
+      "image": "images/portfolio/aae/aae.png",
       "url": "",
       "technologies": [
         "JavaScript",

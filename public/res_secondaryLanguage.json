@@ -50,13 +50,10 @@
       ]
     },
     {
-      "title": "AAE - Académie de l'Air et de l'Espace",
+      "title": "AAE - Academy of Air and Space",
       "job" : "Web Developper",
-      "description": "En tant que membre de l'équipe de R&D, j'ai entrepris un projet de refonte de la page d'accueil. J'ai créé une base de données sous Oracle pour optimiser le stockage des informations et ai établi le lien entre la base de données nouvellement créée et le serveur web à l'aide de servlet. En parallèle, j'ai élargi les fonctionnalités en introduisant des éléments clés tels que la gestion de favoris et un historique.",
+      "description": "During my internship as a web developer at the Académie de l'air et de l'espace, I contributed to a variety of rewarding projects. I developed voting and sponsorship applications for the extranet site, designed a history system for profile modifications and created a mobile application for Android and iOS to simplify access to information for members. This internship gave me hands-on experience in web development, improved my technical skills and strengthened my sense of teamwork.",
       "image" : "images/portfolio/aae/aae.png",
-      "images": [
-        "images/portfolio/adp/p1.jpg"
-      ],
       "url": "",
       "technologies": [
         "JavaScript",

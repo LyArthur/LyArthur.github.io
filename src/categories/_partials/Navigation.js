@@ -26,7 +26,6 @@ class Navigation extends Component {
                 currentSection.getBoundingClientRect().bottom >= 150
             ) {
                 activeSection = section;
-                console.log(activeSection);
                 if (activeSection === "skills"){
                     document.querySelectorAll(".navigation a").forEach((el) => {
                         el.style.color = "white";

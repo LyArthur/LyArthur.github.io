@@ -30,7 +30,7 @@ class ProjectDetailsModal extends Component {
                                    rel="noopener noreferrer">
                                     <div className="text-center skills-tile">
                                        <img src={`./svgIcons/${icons[icon].svg}.svg`} style={{width: 50, height: 50}}></img>
-                                       <p className="text-center" style={{fontSize: "70%", marginTop: "4px"}}>{icon}</p>
+                                       <p className="text-center" style={{fontSize: "1.2rem", marginTop: "4px"}}>{icon}</p>
                                     </div>
                                 </a>
                             </span>
@@ -60,9 +60,9 @@ class ProjectDetailsModal extends Component {
                     <div className="row no-gutters" style={{gap:"50px"}}>
                         <div className="col-md-6">
                             <div className="slider-container">
-                                <Slider {...settings}>
+                                {this.props.data.images ? <Slider {...settings}>
                                     {img}
-                                </Slider>
+                                </Slider> : ""}
                             </div>
                         </div>
                         <div className="col-md-5 d-flex flex-column justify-content-between">
