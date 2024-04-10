@@ -16,7 +16,6 @@ class ProjectDetailsModal extends Component {
         };
         if (this.props.data && this.props.icons) {
             const technologies = this.props.data.technologies;
-            const images = this.props.data.images;
             var title = this.props.data.title;
             var description = this.props.data.description;
             var icons = this.props.icons;
@@ -38,6 +37,7 @@ class ProjectDetailsModal extends Component {
                     );
                 });
                 if (this.props.data.images) {
+                    const images = this.props.data.images;
                     var img = images.map((elem, i) => {
                         return  <div key={i}>
                                     <img src={`./${elem}`} style={{width:"100%",aspectRatio:16/9, borderRadius:"5px"}} />
